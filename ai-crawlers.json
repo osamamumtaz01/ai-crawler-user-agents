@@ -17,6 +17,7 @@
       "robotsCompliance": "yes",
       "robotsNote": "OpenAI documents GPTBot's IP ranges and states it honors robots.txt disallow rules.",
       "docsUrl": "https://platform.openai.com/docs/bots",
+      "ipRangeUrl": "https://openai.com/gptbot.json",
       "url": "https://geoprompttracker.com/bots/gptbot"
     },
     {
@@ -28,6 +29,7 @@
       "robotsCompliance": "yes",
       "robotsNote": "OpenAI states OAI-SearchBot respects robots.txt rules.",
       "docsUrl": "https://platform.openai.com/docs/bots",
+      "ipRangeUrl": "https://openai.com/searchbot.json",
       "url": "https://geoprompttracker.com/bots/oai-searchbot"
     },
     {
@@ -39,6 +41,7 @@
       "robotsCompliance": "yes",
       "robotsNote": "OpenAI states ChatGPT-User honors robots.txt, though as a user-triggered fetcher it visits single pages rather than crawling.",
       "docsUrl": "https://platform.openai.com/docs/bots",
+      "ipRangeUrl": "https://openai.com/chatgpt-user.json",
       "url": "https://geoprompttracker.com/bots/chatgpt-user"
     },
     {
@@ -50,6 +53,7 @@
       "robotsCompliance": "yes",
       "robotsNote": "Anthropic documents ClaudeBot and states it respects robots.txt directives and anti-circumvention signals.",
       "docsUrl": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
+      "ipRangeUrl": null,
       "url": "https://geoprompttracker.com/bots/claudebot"
     },
     {
@@ -61,6 +65,7 @@
       "robotsCompliance": "yes",
       "robotsNote": "Anthropic documents Claude-User alongside its other agents; it fetches single user-requested pages rather than crawling at scale.",
       "docsUrl": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
+      "ipRangeUrl": null,
       "url": "https://geoprompttracker.com/bots/claude-user"
     },
     {
@@ -72,6 +77,7 @@
       "robotsCompliance": "yes",
       "robotsNote": "Anthropic states Claude-SearchBot respects robots.txt directives.",
       "docsUrl": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
+      "ipRangeUrl": null,
       "url": "https://geoprompttracker.com/bots/claude-searchbot"
     },
     {
@@ -83,6 +89,7 @@
       "robotsCompliance": "partial",
       "robotsNote": "Perplexity says PerplexityBot respects robots.txt, but independent investigations (notably Cloudflare's 2024–2025 reports) have observed undeclared fetching that bypassed blocks.",
       "docsUrl": "https://docs.perplexity.ai/guides/bots",
+      "ipRangeUrl": "https://www.perplexity.ai/perplexitybot.json",
       "url": "https://geoprompttracker.com/bots/perplexitybot"
     },
     {
@@ -94,6 +101,7 @@
       "robotsCompliance": "no",
       "robotsNote": "Perplexity's own documentation says Perplexity-User generally ignores robots.txt because fetches are user-requested.",
       "docsUrl": "https://docs.perplexity.ai/guides/bots",
+      "ipRangeUrl": "https://www.perplexity.ai/perplexity-user.json",
       "url": "https://geoprompttracker.com/bots/perplexity-user"
     },
     {
@@ -105,6 +113,7 @@
       "robotsCompliance": "yes",
       "robotsNote": "As a robots.txt token rather than a crawler, honoring your directive is its entire function; Google documents it officially.",
       "docsUrl": "https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers",
+      "ipRangeUrl": "https://developers.google.com/static/crawling/ipranges/common-crawlers.json",
       "url": "https://geoprompttracker.com/bots/google-extended"
     },
     {
@@ -116,6 +125,7 @@
       "robotsCompliance": "yes",
       "robotsNote": "Common Crawl is a nonprofit with a long public record of honoring robots.txt and crawl-delay directives.",
       "docsUrl": "https://commoncrawl.org/ccbot",
+      "ipRangeUrl": null,
       "url": "https://geoprompttracker.com/bots/ccbot"
     },
     {
@@ -127,6 +137,7 @@
       "robotsCompliance": "no",
       "robotsNote": "ByteDance publishes no crawler documentation, and multiple independent reports have found Bytespider ignoring robots.txt; blocking it reliably requires firewall or CDN rules.",
       "docsUrl": null,
+      "ipRangeUrl": null,
       "url": "https://geoprompttracker.com/bots/bytespider"
     },
     {
@@ -138,6 +149,7 @@
       "robotsCompliance": "yes",
       "robotsNote": "Apple documents the token officially and honors it via Applebot's crawl infrastructure.",
       "docsUrl": "https://support.apple.com/en-us/119829",
+      "ipRangeUrl": "https://search.developer.apple.com/applebot.json",
       "url": "https://geoprompttracker.com/bots/applebot-extended"
     },
     {
@@ -149,6 +161,7 @@
       "robotsCompliance": "yes",
       "robotsNote": "Amazon documents Amazonbot and states it respects robots.txt, including wildcard rules.",
       "docsUrl": "https://developer.amazon.com/amazonbot",
+      "ipRangeUrl": null,
       "url": "https://geoprompttracker.com/bots/amazonbot"
     },
     {
@@ -160,6 +173,7 @@
       "robotsCompliance": "yes",
       "robotsNote": "Meta documents the agent and states it respects robots.txt rules.",
       "docsUrl": "https://developers.facebook.com/docs/sharing/webmasters/web-crawlers/",
+      "ipRangeUrl": null,
       "url": "https://geoprompttracker.com/bots/meta-externalagent"
     },
     {
@@ -171,6 +185,7 @@
       "robotsCompliance": "unknown",
       "robotsNote": "Cohere publishes no official crawler documentation, so robots.txt compliance can't be verified; use firewall rules if blocking it matters to you.",
       "docsUrl": null,
+      "ipRangeUrl": null,
       "url": "https://geoprompttracker.com/bots/cohere-ai"
     },
     {
@@ -182,6 +197,7 @@
       "robotsCompliance": "yes",
       "robotsNote": "Apple documents Applebot thoroughly and honors robots.txt directives.",
       "docsUrl": "https://support.apple.com/en-us/119829",
+      "ipRangeUrl": "https://search.developer.apple.com/applebot.json",
       "url": "https://geoprompttracker.com/bots/applebot"
     },
     {
@@ -193,6 +209,7 @@
       "robotsCompliance": "yes",
       "robotsNote": "Officially documented by Google and respects robots.txt like the rest of its crawler family.",
       "docsUrl": "https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers",
+      "ipRangeUrl": "https://developers.google.com/static/crawling/ipranges/common-crawlers.json",
       "url": "https://geoprompttracker.com/bots/googleother"
     },
     {
@@ -204,6 +221,7 @@
       "robotsCompliance": "yes",
       "robotsNote": "Mistral documents the agent and states it respects robots.txt directives.",
       "docsUrl": "https://docs.mistral.ai/robots/",
+      "ipRangeUrl": null,
       "url": "https://geoprompttracker.com/bots/mistralai-user"
     },
     {
@@ -215,6 +233,7 @@
       "robotsCompliance": "no",
       "robotsNote": "Meta's own documentation states Meta-ExternalFetcher may bypass robots.txt because fetches are performed on behalf of a user.",
       "docsUrl": "https://developers.facebook.com/docs/sharing/webmasters/web-crawlers/",
+      "ipRangeUrl": null,
       "url": "https://geoprompttracker.com/bots/meta-externalfetcher"
     },
     {
@@ -226,6 +245,7 @@
       "robotsCompliance": "yes",
       "robotsNote": "Ai2 documents the crawler and honors robots.txt; as a research nonprofit it has strong incentives to stay compliant.",
       "docsUrl": "https://allenai.org/crawler",
+      "ipRangeUrl": null,
       "url": "https://geoprompttracker.com/bots/ai2bot"
     },
     {
@@ -237,6 +257,7 @@
       "robotsCompliance": "yes",
       "robotsNote": "DuckDuckGo documents the agent and states it respects robots.txt.",
       "docsUrl": "https://duckduckgo.com/duckduckgo-help-pages/results/duckassistbot/",
+      "ipRangeUrl": null,
       "url": "https://geoprompttracker.com/bots/duckassistbot"
     },
     {
@@ -248,6 +269,7 @@
       "robotsCompliance": "yes",
       "robotsNote": "You.com documents YouBot and states it honors robots.txt rules.",
       "docsUrl": "https://about.you.com/youbot/",
+      "ipRangeUrl": null,
       "url": "https://geoprompttracker.com/bots/youbot"
     },
     {
@@ -259,6 +281,7 @@
       "robotsCompliance": "yes",
       "robotsNote": "Documented by Aspiegel/Huawei with published IP ranges; states it respects robots.txt and crawl-delay.",
       "docsUrl": "https://aspiegel.com/petalbot",
+      "ipRangeUrl": null,
       "url": "https://geoprompttracker.com/bots/petalbot"
     },
     {
@@ -270,6 +293,7 @@
       "robotsCompliance": "partial",
       "robotsNote": "Diffbot's bulk crawling honors robots.txt, but customer-triggered, on-demand extraction of specific URLs has been reported to proceed regardless — treat blocks as advisory.",
       "docsUrl": "https://docs.diffbot.com/docs/how-to-identify-diffbot",
+      "ipRangeUrl": null,
       "url": "https://geoprompttracker.com/bots/diffbot"
     },
     {
@@ -281,6 +305,7 @@
       "robotsCompliance": "yes",
       "robotsNote": "The bot is documented and states it respects robots.txt; blocking it mainly affects image collection.",
       "docsUrl": "https://imagesift.com/about",
+      "ipRangeUrl": null,
       "url": "https://geoprompttracker.com/bots/imagesiftbot"
     },
     {
@@ -292,6 +317,7 @@
       "robotsCompliance": "yes",
       "robotsNote": "Webz.io documents the bot and states it honors robots.txt; as a data vendor its compliance is part of its sales pitch.",
       "docsUrl": "https://webz.io/bot.html",
+      "ipRangeUrl": null,
       "url": "https://geoprompttracker.com/bots/omgilibot"
     },
     {
@@ -303,6 +329,7 @@
       "robotsCompliance": "unknown",
       "robotsNote": "Timpi publishes limited crawler documentation; compliance reports are sparse. If blocking matters, verify behavior in your logs and back the block with a firewall rule.",
       "docsUrl": null,
+      "ipRangeUrl": null,
       "url": "https://geoprompttracker.com/bots/timpibot"
     },
     {
@@ -314,6 +341,7 @@
       "robotsCompliance": "unknown",
       "robotsNote": "No official documentation exists and independent compliance reports are limited — pair any robots.txt block with a firewall or CDN rule if opting out matters to you.",
       "docsUrl": null,
+      "ipRangeUrl": null,
       "url": "https://geoprompttracker.com/bots/pangubot"
     }
   ]
