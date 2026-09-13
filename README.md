@@ -81,9 +81,32 @@ Each entry in `crawlers[]`:
 | `robotsCompliance` | `yes` \| `partial` \| `no` \| `unknown` | Whether it honors `robots.txt` **in practice** |
 | `robotsNote` | string | The nuance behind that rating, with sourcing |
 | `docsUrl` | string \| null | Operator's official documentation, when published |
+| `ipRangeUrl` | string \| null | Operator-published IP-range JSON, where one exists — `null` means the agent can only be identified by its (spoofable) user-agent string |
+| `crawlDelay` | `yes` \| `no` \| null | Whether the operator documents `crawl-delay` support — see the note below |
+| `crawlDelayNote` | string \| null | The operator's own wording, where they state one |
 | `url` | string | Human-readable page for this bot |
 
 Top-level: `name`, `description`, `source`, `documentation`, `license`, `attribution`, `lastVerified`, `count`.
+
+## A note on `crawlDelay`
+
+`crawl-delay` was never part of the robots.txt specification and Google ignores
+it, so the usual assumption is that no crawler honors it. That assumption is
+mostly right and specifically wrong.
+
+**Only 4 of the 28 operators state a position, and 2 of them support it:**
+
+| Crawler | `crawlDelay` | What the operator says |
+|---|---|---|
+| YouBot | `yes` | Honors crawl-delay directives |
+| ImagesiftBot | `yes` | Reads the value as the minimum seconds between the start of consecutive requests, and documents the interval arithmetic |
+| Amazonbot | `no` | "They do not support the crawl-delay directive" |
+| Applebot | `no` | "Applebot does not follow crawl-delay" |
+
+For the other 24 the field is `null`, **not** `"no"`. Treat undocumented as
+unsupported in practice — but it is an assumption rather than a finding, and
+collapsing the two would throw away the distinction. If you want a single
+boolean, `crawlDelay === "yes"` is the safe test.
 
 ## A note on `robotsCompliance`
 
